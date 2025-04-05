@@ -4,9 +4,9 @@
 ------------------------------------------------------- */
 const router = require('express').Router()
 /* ------------------------------------------------------- */
-const {list, create, read, update, deletee}=require("../controllers/user")
+const {list, read, update, deletee}=require("../controllers/user")
 
-router.route("/").get(list).post(create)
+router.route("/").get(list)
 
 router.route("/:id")
 .get(read)
